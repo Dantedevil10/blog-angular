@@ -1,0 +1,50 @@
+header
+  background-color: #282c34
+  color: #ffffff
+  display: flex
+  justify-content: space-between
+  align-items : center
+  padding : 20px
+
+#imag
+    background-color : white
+    width : 30px
+    height : 30px
+    border-radius : 50px
+
+#userContent
+    display : flex
+    gap : 10px
+    align-items : center
+
+input
+    width : 100%
+    border-radius : 5px 0px 0px 5px
+    border : none
+    padding : 7px
+
+#search
+    display : flex
+    width : 50%
+
+.suggestions
+    position: absolute
+    top: 50px
+    // left: 0
+    width: 40%
+    background: white
+    border: 1px solid #ccc
+    border-radius: 5px
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)
+    list-style: none
+    padding: 0
+    margin: 0
+    max-height: 200px
+    overflow-y: auto
+    li
+      color: black
+      padding: 10px
+      cursor: pointer
+      &:hover
+        background: #f0f0f0
+

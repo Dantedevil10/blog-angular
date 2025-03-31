@@ -1,0 +1,25 @@
+<div>
+    <header>
+        <div style="font-size: 1.5rem;text-shadow: 5px 5px 8px black;cursor: pointer;" 
+        routerLink="/">Dante D.</div>
+        
+        <div id="search">
+            <input type="text" [(ngModel)]="searchQuery" (input)="onSearchChange()" placeholder="Pesquisar...">
+            <button style="display: flex;align-items: center;gap: 10px;border-radius: 0px 5px 5px 0px;
+            border:none;cursor: pointer;font-size: 1rem;">
+                <img src="assets/search.png" width="20px">Pesquisar
+            </button>
+            
+            <!-- Resultados da pesquisa -->
+            <ul *ngIf="suggestions.length > 0" class="suggestions">
+                <li *ngFor="let post of suggestions" [routerLink]="'/post/' + post.id">
+                    {{ post.title }}
+                </li>
+            </ul>
+        </div>
+        <div id="userContent">
+            <p>NomeDeUsuario</p>
+            <div id="imag"></div>
+        </div>
+    </header>
+</div>

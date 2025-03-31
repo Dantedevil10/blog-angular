@@ -1,0 +1,21 @@
+<div>
+    <app-header/>
+    <div id="contentT">
+        <img src="{{post?.imageUrl}}" alt="imagepost" height="400px" width="80%">
+        <h1 style="max-width: 80%;">{{post?.title}}</h1><br>
+        <p style="max-width: 80%;">{{post?.content?.description}}</p>
+    </div>
+
+    <div>
+        <h2 style="padding-top: 8%;padding-left: 10%;">Veja Mais</h2>
+        <div class="post-container">
+            <ng-container *ngFor="let i of posts$ | async; let index = index">
+              <div *ngIf="index < 3" class="post" (click)="openNewPost(i.id)">
+                <img src="{{i.imageUrl}}" alt="imagemPost" width="300px" height="200px">
+                <h3>{{i.title}}</h3>
+                <p>{{i.shortDescription}}</p>
+              </div>
+            </ng-container>
+        </div>
+    </div>
+</div>

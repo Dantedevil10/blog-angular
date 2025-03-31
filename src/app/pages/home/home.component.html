@@ -1,0 +1,27 @@
+
+<section id="home">
+    <app-header></app-header><br>
+
+    <div id="titleHome" style="border-top: 4px solid white;
+    border-bottom: 4px solid white; padding: 20px;">
+        <h1>Dante D. Blog</h1>
+    </div>
+
+    <div id="frstAD">
+        <img src="assets/assassins-creed-shadows-previews-february-2025-release-1-860x484.webp"
+        alt="" width="40%">
+        <h1>Assassin's Creed Shadows New Release</h1>
+        <p>Novo jogo da ubisoft é lançado com promoções especiais</p>
+    </div>
+
+    <div class="post-container">
+        <ng-container *ngFor="let i of posts$ | async; let index = index">
+          <div *ngIf="index < 3" class="post" routerLink="post/{{i.id}}">
+            <img src="{{i.imageUrl}}" alt="imagemPost" width="300px" height="200px">
+            <h3>{{i.title}}</h3>
+            <p>{{i.shortDescription}}</p>
+          </div>
+        </ng-container>
+    </div>
+
+</section>
