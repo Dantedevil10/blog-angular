@@ -1,0 +1,31 @@
+{
+    "PostCard": [
+        {
+            "id": 1,
+            "imageUrl": "https://i.pinimg.com/736x/5d/90/57/5d9057e316205da517aec50441983751.jpg",
+            "title": "Novo Need For Speed Remake de 2005",
+            "shortDescription" : "Novo Jogo da EA traz espectativas altas",
+            "content": {
+                "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor neque enim eum dicta nesciunt ipsa itaque deserunt aut officia quod iste minus, vel quis iusto sint cum, sed tempora natus?"
+            }
+        },
+        {
+            "id": 2,
+            "imageUrl": "https://i.ytimg.com/vi/u00Y9e-Uxj0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCv5VdQUvtWNmaQo0vFR7EPOWr4Yg",
+            "title": "God Of War 20 Anos",
+            "shortDescription" : "Fãs Decepcionados Com a Sony",
+            "content": {
+                "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor neque enim eum dicta nesciunt ipsa itaque deserunt aut officia quod iste minus, vel quis iusto sint cum, sed tempora natus?"
+            }
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://virtualbackgrounds.site/wp-content/uploads/2021/02/grand-theft-auto-v-cover-art.jpg",
+            "title": "Gta V Falha Com Nova Versão Enchanced",
+            "shortDescription" : "Fãs se decepcionam com nova versão inesperada do game",
+            "content": {
+                "description":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor neque enim eum dicta nesciunt ipsa itaque deserunt aut officia quod iste minus, vel quis iusto sint cum, sed tempora natus?"
+            }
+        }
+    ]
+}
